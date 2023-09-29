@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   get 'about', to: 'pages#about'
-  # Defining routes for articles, but limiting it to only the show action
-  resources :articles, only: [:show]
+  # Defining routes for articles, but limiting it to only the show & index actions
+  resources :articles, only: [:show, :index]
 end
