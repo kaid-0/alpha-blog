@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   # root "articles#index"
   get 'about', to: 'pages#about'
   # Defining routes for articles, but limiting it to only the show & index actions
-  resources :articles, only: [:show, :index]
+  resources :articles, only: [:show, :index, :new, :create]
 end
